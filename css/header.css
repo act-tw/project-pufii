@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+.header>.control {
+    height: 44px;
+    background-image: url(http://photo.danna.com.tw/2015web/top_color_01.jpg);
+}
+
+.header>.control>.inbox {
+    max-width: 1225px;
+    margin: 0 auto;
+    height: 44px;
+}
+
+.header>.control>.inbox>a {
+    font-size: 0;
+    display: block;
+    height: 44px;
+    float: left;
+}
+
+.header>.control>.inbox>.joinus {
+    width: 85px;
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_e_02.png);
+}
+
+.header>.control>.inbox>.joinus:hover {
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_c_02.png);
+}
+
+.header>.control>.inbox>.login {
+    width: 85px;
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_e_03.png);
+}
+
+.header>.control>.inbox>.login:hover {
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_c_03.png);
+}
+
+.header>.control>.inbox>.mypage {
+    width: 99px;
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_e_04.png);
+}
+
+.header>.control>.inbox>.mypage:hover {
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_c_04.png);
+}
+
+.header>.control>.inbox>.cart {
+    width: 108px;
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_e_05.png);
+    text-decoration: none;
+}
+
+.header>.control>.inbox>.cart:hover {
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_c_05.png);
+}
+
+.header>.control>.inbox>.cart>span {
+    display: block;
+    width: 25px;
+    height: 18px;
+    background-color: #9c896b;
+    margin-top: 15px;
+    margin-left: 75px;
+    font-size: 17px;
+    color: white;
+}
+
+.header>.control>.inbox>.cart:hover>span {
+	margin-left: 83px;
+}
+
+.header>.control>.inbox>.order {
+    width: 100px;
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_e_06.png);
+}
+
+.header>.control>.inbox>.order:hover {
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_c_06.png);
+}
+
+.header>.main {
+    height: 243px;
+    background-image: url(http://photo.danna.com.tw/2015web/top_color_02.jpg);
+}
+
+.header>.main>.logo {
+	width:370px;
+	height: 152px;
+	background-image: url(http://photo.danna.com.tw/2015web/logo_pufii.png);
+	display: block;
+	margin: 0 auto;
+	font-size: 0;
+}
