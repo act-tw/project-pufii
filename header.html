@@ -16,12 +16,25 @@
                 <a href="#joinus" class="joinus">JOIN US</a>
                 <a href="#login" class="login">LOGIN</a>
                 <a href="#mypage" class="mypage">MY PAGE</a>
-                <a href="#cart" class="cart">CART<span>(0)</span></a>
+                <a href="#cart" class="cart">CART<span>(<span class="count">0</span>)</span>
+                    <div class="cartbox">
+                    </div>
+                </a>
                 <a href="#order" class="order">ORDER</a>
             </div>
         </div>
         <div class="main">
             <a href="#logo" class="logo">LOGO</a>
+        </div>
+        <div class="search">
+            <div class="outbox">
+                <div class="inbox">
+                    <span>SEARCH</span>
+                    <form name="formSc" action="../Shop/itemlist.aspx" method="get" id="formSearch">
+                        <input type="text" name="ctl00$edtSearch" id="edtSearch">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>
