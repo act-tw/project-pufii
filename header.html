@@ -10,8 +10,10 @@
 
 
 
-
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/header.js"></script>
     <div class="header">
         <div class="control">
@@ -21,7 +23,13 @@
                 <a href="#mypage" class="mypage">MY PAGE</a>
                 <span class="cart">
                     <a href="#cart">CART<span>(<span class="count">0</span>)</span></a>
-                    <div class="cartbox">&nbsp;</div>
+                    <div class="cartbox">
+                        <div class="list">&nbsp;</div>
+                        <div class="down">
+                            <span>TOTAL：$<span class="total">0</span></span>
+                            <a href="#checkout">CHECKOUT</a>
+                        </div>
+                    </div>
                 </span>
                 <a href="#order" class="order">ORDER</a>
             </div>
@@ -58,7 +66,7 @@
 
 
 
-    <div style="height:2000px;margin: 0 auto;width: 1225px;padding: 0 180px;">
+    <div style="height:2000px;margin: 0 auto;width: 1225px;padding: 0 180px;background-color:pink;">
     content
     </div>
 </body>

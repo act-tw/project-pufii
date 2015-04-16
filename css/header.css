@@ -75,14 +75,51 @@ body {
 
 .header>.control>.inbox>.cart>.cartbox {
     font-size: 12px;
-    height: 300px;
+    height: 350px;
     width: 400px;
     background-color: white;
-    background-color: pink;
     display: none;
     position: relative;
     z-index: 9;
     margin-left: -137px;
+    padding-top: 10px;
+}
+
+.header>.control>.inbox>.cart>.cartbox>.list {
+    height: 300px;
+    overflow: hidden;
+}
+
+.header>.control>.inbox>.cart>.cartbox>.list img {
+    border-radius: 60px;
+    margin: 10px;
+}
+
+.header>.control>.inbox>.cart>.cartbox>.down {}
+
+.header>.control>.inbox>.cart>.cartbox>.down>span {
+    font-family: arial;
+    display: block;
+    float: left;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header>.control>.inbox>.cart>.cartbox>.down>a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .header>.control>.inbox>.cart:hover {
@@ -90,7 +127,7 @@ body {
 }
 
 .header>.control>.inbox>.cart:hover>.cartbox {
-    display: block;
+    display: block !important;
 }
 
 .header>.control>.inbox>.cart>a>span {
