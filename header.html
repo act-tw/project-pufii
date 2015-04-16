@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
-
 <body>
+
+
+
+
+
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <script src="js/header.js"></script>
     <div class="header">
         <div class="control">
             <div class="inbox">
                 <a href="#joinus" class="joinus">JOIN US</a>
-                <a href="#login" class="login">LOGIN</a>
+                <a href="../common/login.aspx" class="login">LOGIN</a>
                 <a href="#mypage" class="mypage">MY PAGE</a>
-                <a href="#cart" class="cart">CART<span>(<span class="count">0</span>)</span>
-                    <div class="cartbox">
-                    </div>
-                </a>
+                <span class="cart">
+                    <a href="#cart">CART<span>(<span class="count">0</span>)</span></a>
+                    <div class="cartbox">&nbsp;</div>
+                </span>
                 <a href="#order" class="order">ORDER</a>
             </div>
         </div>
@@ -28,15 +31,35 @@
         </div>
         <div class="search">
             <div class="outbox">
-                <div class="inbox">
-                    <span>SEARCH</span>
-                    <form name="formSc" action="../Shop/itemlist.aspx" method="get" id="formSearch">
-                        <input type="text" name="ctl00$edtSearch" id="edtSearch">
-                    </form>
+                <div class="midbox">
+                    <div class="inbox">
+                        <span>SEARCH</span>
+                        <form name="formSc" action="../Shop/itemlist.aspx" method="get" id="formSearch">
+                            <input type="text" name="ctl00$edtSearch" id="edtSearch">
+                        </form>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <p>&nbsp;</p>
+                        <a href="#danna" class="danna">
+                            <img src="http://photo.danna.com.tw/2015web/left_e_20.png">
+                        </a>
+                        <a href="#korea" class="korea">
+                            <img src="http://photo.danna.com.tw/2015web/left_e_21.png">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
 
+
+
+
+
+    <div style="height:2000px;margin: 0 auto;width: 1225px;padding: 0 180px;">
+    content
+    </div>
+</body>
 </html>

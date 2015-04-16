@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    min-width: 800px;
+    min-width: 1585px;
 }
 
 .header>.control {
@@ -17,7 +17,8 @@ body {
     height: 44px;
 }
 
-.header>.control>.inbox>a {
+.header>.control>.inbox>a,
+.header>.control>.inbox>span {
     font-size: 0;
     display: block;
     height: 44px;
@@ -38,8 +39,16 @@ body {
     background-image: url(http://photo.danna.com.tw/2015web/top_login_e_03.png);
 }
 
+.header>.control>.inbox>.login.logout {
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_e_033.png);
+}
+
 .header>.control>.inbox>.login:hover {
     background-image: url(http://photo.danna.com.tw/2015web/top_login_c_03.png);
+}
+
+.header>.control>.inbox>.login.logout:hover {
+    background-image: url(http://photo.danna.com.tw/2015web/top_login_c_033.png);
 }
 
 .header>.control>.inbox>.mypage {
@@ -57,13 +66,23 @@ body {
     text-decoration: none;
 }
 
+.header>.control>.inbox>.cart>a {
+    width: 108px;
+    height: 44px;
+    display: block;
+    text-decoration: none;
+}
+
 .header>.control>.inbox>.cart>.cartbox {
+    font-size: 12px;
     height: 300px;
-    width: 200px;
+    width: 400px;
+    background-color: white;
     background-color: pink;
     display: none;
     position: relative;
     z-index: 9;
+    margin-left: -137px;
 }
 
 .header>.control>.inbox>.cart:hover {
@@ -74,7 +93,7 @@ body {
     display: block;
 }
 
-.header>.control>.inbox>.cart>span {
+.header>.control>.inbox>.cart>a>span {
     display: block;
     width: 25px;
     height: 18px;
@@ -84,7 +103,7 @@ body {
     color: white;
 }
 
-.header>.control>.inbox>.cart:hover>span {
+.header>.control>.inbox>.cart:hover>a>span {
     margin-left: 83px;
 }
 
@@ -124,18 +143,23 @@ body {
 }
 
 .header>.search>.outbox {
-    max-width: 1225px;
+    max-width: 1585px;
     margin: 0 auto;
     height: 40px;
 }
 
-.header>.search>.outbox>.inbox {
+.header>.search>.outbox>.midbox {
+    height: 40px;
+    width: 1405px;
+}
+
+.header>.search>.outbox>.midbox>.inbox {
     width: 200px;
     height: 40px;
     float: right;
 }
 
-.header>.search>.outbox>.inbox>span {
+.header>.search>.outbox>.midbox>.inbox>span {
     font-family: arial;
     font-size: 13px;
     margin-left: 9px;
@@ -152,4 +176,13 @@ body {
     margin-left: 7px;
     height: 18px;
     border-bottom: 1px solid;
+}
+
+.header>.search>.outbox>.menu {
+    width: 180px;
+    position: relative;
+}
+
+.header>.search>.outbox>.menu>div>a>img {
+    vertical-align: bottom;
 }
