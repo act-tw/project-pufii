@@ -84,7 +84,7 @@ $(function() {
 
     (function() {
         if (QueryString("m") === danna.toString()) {
-            $(".main>.logo").addClass("danna");
+            $(".main>.logo").addClass("danna").attr("href","../Shop/?m=" + danna);
         }
     })(); //change logo
 
