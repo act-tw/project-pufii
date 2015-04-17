@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    min-width: 1585px;
+	background-image: url(http://photo.danna.com.tw/2015web/top_color_02.jpg);
 }
 
 .header>.control {
@@ -12,9 +12,10 @@ body {
 }
 
 .header>.control>.inbox {
-    max-width: 1225px;
     margin: 0 auto;
     height: 44px;
+    padding: 0 180px;
+    max-width: 1225px;
 }
 
 .header>.control>.inbox>a,
@@ -157,6 +158,9 @@ body {
     height: 243px;
     background-image: url(http://photo.danna.com.tw/2015web/top_color_02.jpg);
     overflow: hidden;
+    max-width: 1225px;
+    margin: 0 auto;
+    padding: 0 180px;
 }
 
 .header>.main>.logo {
@@ -187,7 +191,8 @@ body {
 
 .header>.search>.outbox>.midbox {
     height: 40px;
-    width: 1405px;
+    max-width: 1225px;
+    padding: 0 180px;
 }
 
 .header>.search>.outbox>.midbox>.inbox {
