@@ -41,10 +41,22 @@
             <div class="outbox">
                 <div class="midbox">
                     <div class="inbox">
-                        <span>SEARCH</span>
-                        <form name="formSc" action="../Shop/itemlist.aspx" method="get" id="formSearch">
-                            <input type="text" name="ctl00$edtSearch" id="edtSearch">
-                        </form>
+                        <div class="search">
+							<form id="formSearch" method="get" action="../Shop/itemlist.aspx" name="formSc">
+							    <select name="m">
+							    <option>DANNA</option>
+							    <option>PUFII</option>
+							    </select>
+							    <div class="selectbox">&nbsp;</div>
+							    <div class="selectlist">
+							    <div>DANNA</div>
+							    <div>PUFII</div>
+							    </div>
+							    <input type="text" value="SEARCH" id="edtSearch" name="ctl00$edtSearch" />
+							    <div class="submit">&nbsp;</div>
+							</form>
+						</div>
+
                     </div>
                 </div>
                 <div class="menu">
