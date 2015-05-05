@@ -124,7 +124,7 @@ body {
 }
 
 .menubox.open {
-	height: 100%;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
     position: fixed;
@@ -138,86 +138,151 @@ body {
     position: fixed;
     left: 561px;
     top: 0px;
+    cursor: pointer;
     margin-left: -561px;
-    transition:margin-left .5s;
+    transition: margin-left .5s;
 }
-
 
 .menubox.open>.close.open {
     margin-left: 0px;
-    transition:margin-left .5s;
+    transition: margin-left .5s;
 }
 
-
 .menubox.open>.slide {
-	overflow: auto;
+    overflow: hidden;
     width: 561px;
     height: 100%;
     background-color: #e3e3e3;
     margin-left: -561px;
-    transition:margin-left .5s;
+    transition: margin-left .5s;
     position: absolute;
-	/*
-    background-image: url(../images/temp.png);
-    background-repeat: no-repeat;
-    */
 }
 
-
 .menubox.open>.slide.open {
-	margin-left: 0px;
-    transition:margin-left .5s;
+    margin-left: 0px;
+    transition: margin-left .5s;
 }
 
 .row {
-  height: 49px;
-  border-top: 1px solid;
-  padding-top: 6px;
-  padding-bottom: 6px;
+    height: 49px;
+    border-top: 1px solid #b4b4b4;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
+
 .row>span {
-  font-size: 28px;
-  display: list-item;
-  list-style-position: inside;
-  float: left;
-  letter-spacing: 7px;
-  font-family: arial,'微軟正黑體';
-  font-weight: bold;
-  height: 49px;
-  line-height: 50px;
-  margin-left: 31px;
+    font-size: 28px;
+    display: list-item;
+    list-style-position: inside;
+    float: left;
+    letter-spacing: 7px;
+    font-family: arial, '微軟正黑體';
+    font-weight: bold;
+    height: 49px;
+    line-height: 50px;
+    margin-left: 31px;
+    color: black;
 }
 
 .row>span.home {
-  background-image: url(http://photo.danna.com.tw/2015mobile/001-16.png);
-  float: right;
-  list-style-type: none;
-  display: block;
-  width: 49px;
-  height: 49px;
-  margin-right: 36px;
+    background-image: url(http://photo.danna.com.tw/2015mobile/001-16.png);
+    float: right;
+    list-style-type: none;
+    display: block;
+    width: 49px;
+    height: 49px;
+    margin-right: 36px;
 }
 
 .row>span.search {
-  background-image: url(http://photo.danna.com.tw/2015mobile/001-17.png);
-  float: right;
-  list-style-type: none;
-  display: block;
-  width: 49px;
-  height: 49px;
-  margin-right: 36px;
+    background-image: url(http://photo.danna.com.tw/2015mobile/001-17.png);
+    float: right;
+    list-style-type: none;
+    display: block;
+    width: 49px;
+    height: 49px;
+    margin-right: 36px;
 }
 
 .row>span.flag {
-  float: right;
-  list-style-type: none;
-  display: block;
-  width: 49px;
-  height: 49px;
-  margin-right: 19px;
+    float: right;
+    list-style-type: none;
+    display: block;
+    width: 49px;
+    height: 49px;
+    margin-right: 19px;
 }
 
 .row>span.flag:after {
-  content: '>';
-  font-size: 31px;
+    content: '>';
+    font-size: 31px;
+}
+
+.share {
+    height: 150px;
+    padding-left: 52px;
+    margin-top: 20px;
+}
+
+.fb {
+    width: 59px;
+    height: 59px;
+    background-image: url(http://photo.danna.com.tw/2015mobile/001-fb.png);
+    float: left;
+    margin-right: 50px;
+}
+
+.ig {
+    width: 59px;
+    height: 59px;
+    background-image: url(http://photo.danna.com.tw/2015mobile/001-IG.png);
+    float: left;
+    margin-right: 50px;
+}
+
+.email {
+    width: 59px;
+    height: 59px;
+    background-image: url(http://photo.danna.com.tw/2015mobile/001-MAIL.png);
+    float: left;
+}
+
+.share>div>a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.searchbrand {
+    width: 235px;
+    height: 44px;
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    margin-left: 31px;
+    margin-top: -6px;
+    font-size: 30px;
+    background-image: url(../images/flag.png);
+    background-repeat: no-repeat;
+    background-position: 216px center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.searchtext {
+    margin-left: 284px;
+    height: 39px;
+    border: 2px solid;
+    margin-top: -45px;
+    display: block;
+    width: 223px;
+    font-size: 30px;
+    padding: 1px 5px;
 }
