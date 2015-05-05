@@ -1,8 +1,33 @@
-"use strict";
+﻿"use strict";
 var isLocal = /^file\:\/\/\//i.test(location.href);
 var pufii = 20;
 var danna = 19;
-$(function() {
+function initShoppingCart() {
+    var cartlist = [{ "MerNo": "DP7384", "MerNo1": "P7384", "MerName": "細肩帶無痕罩杯背心小可愛 4色 - 帕妃PUFII", "Color": "藍", "Size": "依賣場", "Price": 198, "Num": 1, "PhotoSmPath": "http://photo.danna.com.tw/20150312/8898.gif", "ColorPhotoPath": "" }, { "MerNo": "DP7384", "MerNo1": "P7384", "MerName": "細肩帶無痕罩杯背心小可愛 4色 - 帕妃PUFII", "Color": "粉", "Size": "依賣場", "Price": 198, "Num": 1, "PhotoSmPath": "http://photo.danna.com.tw/20150312/8898.gif", "ColorPhotoPath": "" }, { "MerNo": "DP7384", "MerNo1": "P7384", "MerName": "細肩帶無痕罩杯背心小可愛 4色 - 帕妃PUFII", "Color": "白", "Size": "依賣場", "Price": 198, "Num": 1, "PhotoSmPath": "http://photo.danna.com.tw/20150312/8898.gif", "ColorPhotoPath": "" }];
+    function getdata(cartList) {
+        var count = 0;
+        var total = 0;
+        try {
+            if (cartList[0].MerName) {
+                for (var i = 0; i < cartList.length; i++) {
+                    count += cartList[i].Num;
+                    total += cartList[i].Num * cartList[i].Price;
+                }
+                $(".cart>a").html("<span>" + (count === 0 ? "" : count) + "</span>");
+            }
+        } catch (e) {
+        }
+    }
+    if (isLocal) {
+        getdata(cartlist);
+    } else {
+        $.getJSON("../../../../Common/CartList.ashx", function (cartList) {
+            getdata(cartList);
+        });
+    }
+}
+$(function () {
+    
     function QueryString(name, url) {
         if (url === undefined) {
             url = window.location.search.substring(1);
@@ -66,7 +91,7 @@ $(function() {
                             }
                             html += ">" + data[i].SubClass[j].Name;
                         } else {
-                            html += "<a href=\"../Common/m/Main/Shop/itemList.aspx?m=" + data[i].Idno + "&p=" + data[i].SubClass[j].Idno + "\">";
+                            html += "<a href=\"../../../../Common/m/Main/Shop/itemList.aspx?m=" + data[i].Idno + "&p=" + data[i].SubClass[j].Idno + "\">";
                         }
                         html += "<div class=\"row\">";
                         html += "<span>" + data[i].SubClass[j].V1 + "</span>";
@@ -77,11 +102,18 @@ $(function() {
                 }
             }
             $(".searchlink").after(html);
+            
+            (function () {
+                $(".searchtext").attr("class", "searchtext");
+                $(".searchtext").parent().removeAttr("class").css("box-shadow", "none");
+                $(".searchbrand").parent().removeAttr("class").css("box-shadow", "none").parent().removeAttr("class");
+            })(); //ui adjust
+
             (function() {
-		        $(".menubox").addClass("open")
+                $(".menubox").addClass("open");
 		        var old = $(".menubox.open>.slide").css("margin-left");
 		        $(".menubox.open>.slide").css("margin-left", 0);
-		        new IScroll(".slide", {
+		        var a = new IScroll(".slide", {
 		            mouseWheel: true,
 		            click: true
 		        });
@@ -93,7 +125,7 @@ $(function() {
         if (isLocal) {
             getdata(data);
         } else {
-            $.getJSON("../common/ajax/menucmd.ashx", function(data) {
+            $.getJSON("../../../../common/ajax/menucmd.ashx", function(data) {
                 getdata(data);
             });
         }
@@ -106,47 +138,8 @@ $(function() {
     	$(".danna>a").attr("href",$(".danna>a").attr("href")+"?m="+danna);
     })(); //switch brand
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-    	setTimeout(function() {
-    		open($("#test"));
-    	},5000);
-    	*/
-    function open(elem) {
-        if (document.createEvent) {
-            var e = document.createEvent("MouseEvents");
-            e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            elem[0].dispatchEvent(e);
-        } else if (element.fireEvent) {
-            elem[0].fireEvent("onmousedown");
-        }
-    }
+    (function () {
+        initShoppingCart();
+    })(); //initilizing
 
 });
