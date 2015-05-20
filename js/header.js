@@ -52,6 +52,7 @@ function initShoppingCart() {
 }
 
 $(function() {
+
     function QueryString(name, url) {
         if (url === undefined) {
             url = window.location.search.substring(1);
@@ -67,33 +68,34 @@ $(function() {
         return "";
     }
 
-	(function() {
-		var data={"IsLogin":true};
-		function getdata(data) {
-			if (data !== null && data.IsLogin) {
-				$(".inbox>.login").addClass("logout").attr("href","../common/loginout.aspx");
-			}
-		}
-		if (isLocal) {
-			getdata(data);
-		} else {
-			$.getJSON("../Common/LoginStatus.ashx",function(data){
-				getdata(data);
-			});
-		}
-	})(); //loginstatus
+    (function() {
+        var data = { "IsLogin": true };
+
+        function getdata(data) {
+            if (data !== null && data.IsLogin) {
+                $(".inbox>.login").addClass("logout").attr("href", "../common/loginout.aspx");
+            }
+        }
+
+        if (isLocal) {
+            getdata(data);
+        } else {
+            $.getJSON("../Common/LoginStatus.ashx", function(data) {
+                getdata(data);
+            });
+        }
+    })(); //loginstatus
 
     (function() {
         if (QueryString("m") === danna.toString()) {
-            $(".main>.logo").addClass("danna").attr("href","../Shop/?m=" + danna);
+            $(".main>.logo").addClass("danna").attr("href", "../Shop/?m=" + danna);
         }
     })(); //change logo
 
-
-    (function () {
+    (function() {
         var $searchText = $("#edtSearch"),
             $searchBtn = $(".header>.search>.outbox>.midbox>.inbox>.search>form>.submit");
-        $searchText.click(function () {
+        $searchText.click(function() {
             var $this = $(this);
             if ($this.val() === "SEARCH") {
                 $this.val("");
@@ -101,23 +103,20 @@ $(function() {
                 $this.select();
             }
         });
-        $searchText.blur(function () {
+        $searchText.blur(function() {
             var $this = $(this);
             if ($this.val() === "") {
                 $this.val("SEARCH");
             }
         });
-        $searchBtn.click(function () {
+        $searchBtn.click(function() {
             $("#formSearch").submit();
         });
     })(); //search
-    
-
- 	
-
 
     (function() {
-        var data = [{"Idno":20,"Name":"PUFII","MouseoverName":"","PhotoPath":"http://photo.danna.com.tw/2015web/left_c_01.png","MainPhoto":"http://xovera.verawang.com/uploads/Image/2013-10-10-Ded/WVW_image1.jpg","ShowType":0,"OrderNum":2,"V1":"","SubClass":[{"Idno":121,"Name":"http://photo.danna.com.tw/2015web/left_e_02.png","MouseoverName":"http://photo.danna.com.tw/2015web/left_c_02.png","TopIdno":99999,"Visible":false,"MobileVisibleType":1,"MainIdno":0,"ShowType":0,"V1":"","ordernum":100,"Level":0,"List":[]},{"Idno":122,"Name":"http://photo.danna.com.tw/2015web/left_e_03.png","MouseoverName":"http://photo.danna.com.tw/2015web/left_c_03.png","TopIdno":99999,"Visible":false,"MobileVisibleType":1,"MainIdno":0,"ShowType":0,"V1":"","ordernum":100,"Level":0,"List":[]},{"Idno":123,"Name":"http://photo.danna.com.tw/2015web/left_e_04.png","MouseoverName":"http://photo.danna.com.tw/2015web/left_c_04.png","TopIdno":99999,"Visible":false,"MobileVisibleType":1,"MainIdno":0,"ShowType":0,"V1":"","ordernum":100,"Level":0,"List":[]},{"Idno":124,"Name":"http://photo.danna.com.tw/2015web/left_e_05.png","MouseoverName":"http://photo.danna.com.tw/2015web/left_c_05.png","TopIdno":99999,"Visible":false,"MobileVisibleType":1,"MainIdno":0,"ShowType":0,"V1":"","ordernum":100,"Level":0,"List":[]}]},{"Idno":19,"Name":"DANNA","MouseoverName":"","PhotoPath":"http://photo.danna.com.tw/2015web/left_c_13.png","MainPhoto":"http://www.womangettingmarried.com/wp-content/uploads/2013/11/WVW_ebony_350x225.jpg","ShowType":0,"OrderNum":100,"V1":"","SubClass":[{"Idno":119,"Name":"http://photo.danna.com.tw/2015web/left_e_05.png","MouseoverName":"http://photo.danna.com.tw/2015web/left_c_05.png","TopIdno":99999,"Visible":false,"MobileVisibleType":1,"MainIdno":0,"ShowType":0,"V1":"","ordernum":100,"Level":0,"List":[{"Idno":120,"Name":"NEW","MouseoverName":"","TopIdno":119,"Visible":false,"MobileVisibleType":1,"MainIdno":0,"ShowType":0,"V1":"","ordernum":100,"Level":0,"List":[]}]}]}];
+        var data = [{ "Idno": 20, "Name": "PUFII", "MouseoverName": "", "PhotoPath": "http://photo.danna.com.tw/2015web/left_c_01.png", "MainPhoto": "http://xovera.verawang.com/uploads/Image/2013-10-10-Ded/WVW_image1.jpg", "ShowType": 0, "OrderNum": 2, "V1": "", "SubClass": [{ "Idno": 121, "Name": "http://photo.danna.com.tw/2015web/left_e_02.png", "MouseoverName": "http://photo.danna.com.tw/2015web/left_c_02.png", "TopIdno": 99999, "Visible": false, "MobileVisibleType": 1, "MainIdno": 0, "ShowType": 0, "V1": "", "ordernum": 100, "Level": 0, "List": [] }, { "Idno": 122, "Name": "http://photo.danna.com.tw/2015web/left_e_03.png", "MouseoverName": "http://photo.danna.com.tw/2015web/left_c_03.png", "TopIdno": 99999, "Visible": false, "MobileVisibleType": 1, "MainIdno": 0, "ShowType": 0, "V1": "", "ordernum": 100, "Level": 0, "List": [] }, { "Idno": 123, "Name": "http://photo.danna.com.tw/2015web/left_e_04.png", "MouseoverName": "http://photo.danna.com.tw/2015web/left_c_04.png", "TopIdno": 99999, "Visible": false, "MobileVisibleType": 1, "MainIdno": 0, "ShowType": 0, "V1": "", "ordernum": 100, "Level": 0, "List": [] }, { "Idno": 124, "Name": "http://photo.danna.com.tw/2015web/left_e_05.png", "MouseoverName": "http://photo.danna.com.tw/2015web/left_c_05.png", "TopIdno": 99999, "Visible": false, "MobileVisibleType": 1, "MainIdno": 0, "ShowType": 0, "V1": "", "ordernum": 100, "Level": 0, "List": [] }] }, { "Idno": 19, "Name": "DANNA", "MouseoverName": "", "PhotoPath": "http://photo.danna.com.tw/2015web/left_c_13.png", "MainPhoto": "http://www.womangettingmarried.com/wp-content/uploads/2013/11/WVW_ebony_350x225.jpg", "ShowType": 0, "OrderNum": 100, "V1": "", "SubClass": [{ "Idno": 119, "Name": "http://photo.danna.com.tw/2015web/left_e_05.png", "MouseoverName": "http://photo.danna.com.tw/2015web/left_c_05.png", "TopIdno": 99999, "Visible": false, "MobileVisibleType": 1, "MainIdno": 0, "ShowType": 0, "V1": "", "ordernum": 100, "Level": 0, "List": [{ "Idno": 120, "Name": "NEW", "MouseoverName": "", "TopIdno": 119, "Visible": false, "MobileVisibleType": 1, "MainIdno": 0, "ShowType": 0, "V1": "", "ordernum": 100, "Level": 0, "List": [] }] }] }];
+
         function getdata(data) {
             var html = "";
             for (var i = 0, imax = data.length; i < imax; i++) {
@@ -153,7 +152,6 @@ $(function() {
             $(".danna").attr("href", "?m=" + danna);
 
 
-
             (function(m) {
                 $(".header>.search>.outbox>.midbox>.inbox>.search>form>select>option").eq(0).attr("value", danna);
                 $(".header>.search>.outbox>.midbox>.inbox>.search>form>select>option").eq(1).attr("value", pufii);
@@ -172,39 +170,77 @@ $(function() {
                 }
             })(QueryString("m")); //add search select option
 
-        	(function() {
-        	    var $select = $(".header>.search>.outbox>.midbox>.inbox>.search>form>select");
-        	    var $selectbox = $(".header>.search>.outbox>.midbox>.inbox>.search>form>.selectbox");
-        	    var $selectlist = $(".header>.search>.outbox>.midbox>.inbox>.search>form>.selectlist");
-        	    $selectlist.append("<div>ALL</div>");
-        	    var $selectlistdiv = $(".header>.search>.outbox>.midbox>.inbox>.search>form>.selectlist>div");
-        	    $selectbox.text($select.find(">option:selected").text());
-        	    $selectbox.click(function(e) {
-        	        if ($selectlist.is(":hidden")) {
-        	            $selectlist.show();
-        	        } else {
-        	            $selectlist.hide();
-        	        }
-        	        e.stopPropagation();
-        	    });
+            (function() {
+                var $select = $(".header>.search>.outbox>.midbox>.inbox>.search>form>select");
+                var $selectbox = $(".header>.search>.outbox>.midbox>.inbox>.search>form>.selectbox");
+                var $selectlist = $(".header>.search>.outbox>.midbox>.inbox>.search>form>.selectlist");
+                $selectlist.append("<div>ALL</div>");
+                var $selectlistdiv = $(".header>.search>.outbox>.midbox>.inbox>.search>form>.selectlist>div");
+                $selectbox.text($select.find(">option:selected").text());
+                $selectbox.click(function(e) {
+                    if ($selectlist.is(":hidden")) {
+                        $selectlist.show();
+                    } else {
+                        $selectlist.hide();
+                    }
+                    e.stopPropagation();
+                });
 
 
-        	    $selectlistdiv.click(function() {
-        	        var text = $(this).text();
-        	        $selectbox.text(text);
-        	        $select.find(">option:selected").removeAttr("selected");
-        	        $select.find(">option:contains('" + text + "')").attr("selected", "selected");
-        	        if (text === "ALL") {
-        	            $select.removeAttr("name");
-        	        } else {
-        	            $select.attr("name", "m");
-        	        }
-        	    });
-        	    $(document).click(function() {
-        	        $selectlist.hide();
-        	    });
-        	})(); //add custom select option
+                $selectlistdiv.click(function() {
+                    var text = $(this).text();
+                    $selectbox.text(text);
+                    $select.find(">option:selected").removeAttr("selected");
+                    $select.find(">option:contains('" + text + "')").attr("selected", "selected");
+                    if (text === "ALL") {
+                        $select.removeAttr("name");
+                    } else {
+                        $select.attr("name", "m");
+                    }
+                });
+                $(document).click(function() {
+                    $selectlist.hide();
+                });
+            })(); //add custom select option
+
+
+            (function() {
+                var $document = $(document),
+                    $window = $(window),
+                    $menu = $(".header>.search>.outbox>.menu"),
+                    $footerdiv = $("#footer>div"),
+                    headerHeight = $(".header").height(),
+                    footerHeight = $document.height() - $window.height() - $footerdiv.outerHeight(true),
+                    documentHeight = $document.height();
+                $window.resize(function () {
+                    headerHeight = $(".header").height();
+                    footerHeight = $document.height() - $window.height() - $footerdiv.outerHeight(true);
+                    documentHeight = $document.height();
+                });
+                $window.scroll(function () {
+                    footerHeight = $document.height() - $window.height() - $footerdiv.outerHeight(true);
+                    documentHeight = $document.height();
+                    if ($window.scrollTop() > footerHeight + ($window.height() - $menu.outerHeight(true)) && $footerdiv.outerHeight(true) + $menu.outerHeight(true) > $window.height()) {
+                        if ($menu.attr("style") === undefined) {
+                            $menu.css({ "position": "absolute", "top": documentHeight - $menu.outerHeight(true) - $footerdiv.outerHeight(true) - 247 });
+                        }
+                    } else if ($window.scrollTop() < parseInt($menu.css("top")) + 247 && $footerdiv.outerHeight(true) + $menu.outerHeight(true) > $window.height()) {
+                        if ($menu.attr("style") !== undefined) {
+                            $menu.removeAttr("style");
+                        }
+                    } else if ($window.scrollTop() > headerHeight) {
+                        if (!$menu.hasClass("fixed")) {
+                            $menu.addClass("fixed");
+                        }
+                    } else {
+                        if ($menu.hasClass("fixed")) {
+                            $menu.removeClass("fixed");
+                        }
+                    }
+                });
+            })(); //fixed left menu
         }
+
         if (isLocal) {
             getdata(data);
         } else {
@@ -214,7 +250,7 @@ $(function() {
         }
     })(); //load menu
 
-	(function() {
-		initShoppingCart();
-	})(); //init    
+    (function() {
+        initShoppingCart();
+    })(); //init    
 });

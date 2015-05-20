@@ -29,7 +29,7 @@ $(function() {
         getData(data);
     } else {
         $.getJSON("../shop/customuc/c34pufii201404/data/?type=newaction", function(data) {
-            getData(data)
+            getData(data);
         });
     }
 });

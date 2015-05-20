@@ -1,199 +1,243 @@
-﻿body {
+﻿body
+{
     margin: 0;
-    background-color: pink;
-    height: 5000px;
 }
 
-.header {
+.header
+{
     width: 100%;
     background-color: white;
     overflow: hidden;
     position: fixed;
     z-index: 999;
+    border-bottom: 1px solid #e7e7e7;
 }
 
-.header>.logo {
-    background-color: #f4e0d5;
-    background-image: url(../images/pufii-logo.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 106px;
-}
+    .header > .logo
+    {
+        background-color: #f4e0d5;
+        background-image: url(../images/pufii-logo.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 106px;
+    }
 
-.header>.logo>a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    font-size: 0;
-}
+        .header > .logo > a
+        {
+            width: 100%;
+            height: 100%;
+            display: block;
+            font-size: 0;
+        }
 
-.header>.control {
-    height: 68px;
-}
+    .header > .control
+    {
+        height: 68px;
+    }
 
-.header>.control>.left {
-    float: left;
-}
+        .header > .control > .left
+        {
+            float: left;
+        }
 
-.header>.control>.left>div {
-    float: left;
-}
+            .header > .control > .left > div
+            {
+                float: left;
+            }
 
-.header>.control>.left>.menu {
-    width: 57px;
-    height: 57px;
-    background-image: url(http://photo.danna.com.tw/2015mobile/001-01.png);
-    margin: 6px 24px 0 20px;
-    cursor: pointer;
-}
+            .header > .control > .left > .menu
+            {
+                width: 57px;
+                height: 57px;
+                background-image: url(http://photo.danna.com.tw/2015mobile/001-01.png);
+                margin: 6px 24px 0 20px;
+                cursor: pointer;
+            }
 
-.header>.control>.left>.brand {
-    height: 68px;
-}
+            .header > .control > .left > .brand
+            {
+                height: 68px;
+            }
 
-.header>.control>.left>.brand>.welcome {
-    margin-top: 8px;
-}
+                .header > .control > .left > .brand > .welcome
+                {
+                    margin-top: 8px;
+                }
 
-.header>.control>.left>.brand>.text {
-    margin-top: 11px;
-}
+                .header > .control > .left > .brand > .text
+                {
+                    margin-top: 11px;
+                }
 
-.header>.control>.left>.brand>.text>span {
-    float: left;
-}
+                    .header > .control > .left > .brand > .text > span
+                    {
+                        float: left;
+                    }
 
-.header>.control>.left>.brand>.text>.pufii {
-    width: 88px;
-    height: 27px;
-    background-image: url(http://photo.danna.com.tw/2015mobile/001-04.png);
-    display: inline-block;
-    font-size: 0;
-    margin-top: -5px;
-    cursor: pointer;
-}
+                    .header > .control > .left > .brand > .text > .pufii
+                    {
+                        width: 88px;
+                        height: 27px;
+                        background-image: url(http://photo.danna.com.tw/2015mobile/001-04.png);
+                        display: inline-block;
+                        font-size: 0;
+                        margin-top: -5px;
+                        cursor: pointer;
+                    }
 
-.header>.control>.left>.brand>.text>.pufii>a {
-	width: 88px;
-    height: 27px;
-    display: block;
-}
+                        .header > .control > .left > .brand > .text > .pufii > a
+                        {
+                            width: 88px;
+                            height: 27px;
+                            display: block;
+                        }
 
-.header>.control>.left>.brand>.text>.danna {
-    width: 105px;
-    height: 27px;
-    background-image: url(http://photo.danna.com.tw/2015mobile/001-05.png);
-    display: inline-block;
-    font-size: 0;
-    margin-top: -5px;
-    cursor: pointer;
-}
+                    .header > .control > .left > .brand > .text > .danna
+                    {
+                        width: 105px;
+                        height: 27px;
+                        background-image: url(http://photo.danna.com.tw/2015mobile/001-05.png);
+                        display: inline-block;
+                        font-size: 0;
+                        margin-top: -5px;
+                        cursor: pointer;
+                    }
 
-.header>.control>.left>.brand>.text>.danna>a {
-	width: 105px;
-    height: 27px;
-    display: block;
-}
+                        .header > .control > .left > .brand > .text > .danna > a
+                        {
+                            width: 105px;
+                            height: 27px;
+                            display: block;
+                        }
 
-.header>.control>.right {
-    float: right;
-}
+        .header > .control > .right
+        {
+            float: right;
+        }
 
-.header>.control>.right>div {
-    float: right;
-}
+            .header > .control > .right > div
+            {
+                float: right;
+            }
 
-.header>.control>.right>.cart {
-    width: 55px;
-    height: 55px;
-    background-image: url(http://photo.danna.com.tw/2015mobile/001-03.png);
-    margin-right: 22px;
-    margin-top: 6px;
-    cursor: pointer;
-}
+            .header > .control > .right > .cart
+            {
+                width: 55px;
+                height: 55px;
+                background-image: url(http://photo.danna.com.tw/2015mobile/001-03.png);
+                margin-right: 22px;
+                margin-top: 6px;
+                cursor: pointer;
+            }
 
-.header>.control>.right>.cart>a {
-    width: 55px;
-    height: 55px;
-    display: block;
-    font-size: 0;
-}
+                .header > .control > .right > .cart > a
+                {
+                    width: 55px;
+                    height: 55px;
+                    display: block;
+                    font-size: 0;
+                }
 
-.header>.control>.right>.cart>a>span {
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    float: right;
-    margin-right: -5px;
-    font-size: 16px;
-    font-weight: normal;
-}
+                    .header > .control > .right > .cart > a > span
+                    {
+                        background-color: red;
+                        width: 20px;
+                        height: 20px;
+                        text-align: center;
+                        color: white;
+                        -moz-border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        border-radius: 10px;
+                        float: right;
+                        margin-right: -5px;
+                        font-size: 16px;
+                        font-weight: normal;
+                    }
 
-.header>.control>.right>.user {
-    width: 55px;
-    height: 55px;
-    background-image: url(http://photo.danna.com.tw/2015mobile/001-02.png);
-    margin-right: 20px;
-    margin-top: 6px;
-    cursor: pointer;
-}
+            .header > .control > .right > .user
+            {
+                width: 55px;
+                height: 55px;
+                background-image: url(http://photo.danna.com.tw/2015mobile/001-02.png);
+                margin-right: 20px;
+                margin-top: 6px;
+                cursor: pointer;
+            }
 
-.header>.control>.right>.user>a {
-	width: 55px;
-    height: 55px;
-    display: block;
-    font-size: 0;
-}
+                .header > .control > .right > .user > a
+                {
+                    width: 55px;
+                    height: 55px;
+                    display: block;
+                    font-size: 0;
+                }
 
-.menubox {
+.menubox
+{
     display: none;
 }
 
-.menubox.open {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    position: fixed;
-    display: block;
-    z-index: 999;
-}
+    .menubox.open
+    {
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        display: block;
+        z-index: 999;
+    }
 
-.menubox.open>.close {
-    background-image: url(http://photo.danna.com.tw/2015mobile/001-15.png);
-    width: 64px;
-    height: 123px;
-    position: fixed;
-    left: 561px;
-    top: 0px;
-    cursor: pointer;
-    margin-left: -561px;
-    transition: margin-left .5s;
-}
+        .menubox.open > .close
+        {
+            background-image: url(http://photo.danna.com.tw/2015mobile/001-15.png);
+            width: 64px;
+            height: 123px;
+            position: fixed;
+            left: 561px;
+            top: 0;
+            cursor: pointer;
+            margin-left: -561px;
+            -moz-transition: margin-left .5s;
+            -o-transition: margin-left .5s;
+            -webkit-transition: margin-left .5s;
+            transition: margin-left .5s;
+        }
 
-.menubox.open>.close.open {
-    margin-left: 0px;
-    transition: margin-left .5s;
-}
+            .menubox.open > .close.open
+            {
+                margin-left: 0;
+                -moz-transition: margin-left .5s;
+                -o-transition: margin-left .5s;
+                -webkit-transition: margin-left .5s;
+                transition: margin-left .5s;
+            }
 
-.menubox.open>.slide {
-    overflow: hidden;
-    width: 561px;
-    height: 100%;
-    background-color: #e3e3e3;
-    margin-left: -561px;
-    transition: margin-left .5s;
-    position: absolute;
-}
+        .menubox.open > .slide
+        {
+            overflow: hidden;
+            width: 561px;
+            height: 100%;
+            background-color: #e3e3e3;
+            margin-left: -561px;
+            -moz-transition: margin-left .5s;
+            -o-transition: margin-left .5s;
+            -webkit-transition: margin-left .5s;
+            transition: margin-left .5s;
+            position: absolute;
+        }
 
-.menubox.open>.slide.open {
-    margin-left: 0px;
-    transition: margin-left .5s;
-}
+            .menubox.open > .slide.open
+            {
+                margin-left: 0;
+                -moz-transition: margin-left .5s;
+                -o-transition: margin-left .5s;
+                -webkit-transition: margin-left .5s;
+                transition: margin-left .5s;
+            }
 
-.row {
+.row
+{
     height: 49px;
     border-top: 1px solid #b4b4b4;
     padding-top: 6px;
@@ -201,61 +245,68 @@
     cursor: pointer;
 }
 
-.row>span {
-    font-size: 28px;
-    display: list-item;
-    list-style-position: inside;
-    float: left;
-    letter-spacing: 7px;
-    font-family: arial, '微軟正黑體';
-    font-weight: bold;
-    height: 49px;
-    line-height: 50px;
-    margin-left: 31px;
-    color: black;
-}
+    .row > span
+    {
+        font-size: 28px;
+        display: list-item;
+        list-style-position: inside;
+        float: left;
+        letter-spacing: 7px;
+        font-family: arial, '微軟正黑體';
+        font-weight: bold;
+        height: 49px;
+        line-height: 50px;
+        margin-left: 31px;
+        color: black;
+    }
 
-.row>span.home {
-    background-image: url(http://photo.danna.com.tw/2015mobile/001-16.png);
-    float: right;
-    list-style-type: none;
-    display: block;
-    width: 49px;
-    height: 49px;
-    margin-right: 36px;
-}
+        .row > span.home
+        {
+            background-image: url(http://photo.danna.com.tw/2015mobile/001-16.png);
+            float: right;
+            list-style-type: none;
+            display: block;
+            width: 49px;
+            height: 49px;
+            margin-right: 36px;
+        }
 
-.row>span.search {
-    background-image: url(http://photo.danna.com.tw/2015mobile/001-17.png);
-    float: right;
-    list-style-type: none;
-    display: block;
-    width: 49px;
-    height: 49px;
-    margin-right: 36px;
-}
+        .row > span.search
+        {
+            background-image: url(http://photo.danna.com.tw/2015mobile/001-17.png);
+            float: right;
+            list-style-type: none;
+            display: block;
+            width: 49px;
+            height: 49px;
+            margin-right: 36px;
+        }
 
-.row>span.flag {
-    float: right;
-    list-style-type: none;
-    display: block;
-    width: 49px;
-    height: 49px;
-    margin-right: 19px;
-}
+        .row > span.flag
+        {
+            float: right;
+            list-style-type: none;
+            display: block;
+            width: 49px;
+            height: 49px;
+            margin-right: 19px;
+        }
 
-.row>span.flag:after {
-    content: '>';
-    font-size: 31px;
-}
+            .row > span.flag:after
+            {
+                content: '>';
+                font-size: 31px;
+            }
 
-.share {
+.share
+{
     height: 150px;
     padding-left: 52px;
     margin-top: 20px;
 }
 
-.fb {
+.fb
+{
     width: 59px;
     height: 59px;
     background-image: url(http://photo.danna.com.tw/2015mobile/001-fb.png);
@@ -263,7 +314,8 @@
     margin-right: 50px;
 }
 
-.ig {
+.ig
+{
     width: 59px;
     height: 59px;
     background-image: url(http://photo.danna.com.tw/2015mobile/001-IG.png);
@@ -271,25 +323,35 @@
     margin-right: 50px;
 }
 
-.email {
+.email
+{
     width: 59px;
     height: 59px;
     background-image: url(http://photo.danna.com.tw/2015mobile/001-MAIL.png);
     float: left;
 }
 
-.share>div>a {
+.share > div > a
+{
     width: 100%;
     height: 100%;
     display: block;
     font-size: 0;
 }
 
-.hide {
+.hide
+{
     display: none;
 }
 
-.searchbrand {
+.searchlink
+{
+    margin-top: 64px;
+    border-top: 0;
+}
+
+.searchbrand
+{
     width: 235px;
     height: 44px;
     background-color: black;
@@ -307,7 +369,8 @@
     -moz-appearance: none;
 }
 
-.searchtext {
+.searchtext
+{
     margin-left: 284px;
     height: 39px;
     border: 2px solid;
@@ -318,6 +381,73 @@
     padding: 1px 5px;
 }
 
-.content {
-	padding-top: 174px;
+/**/
+
+div.ui-content
+{
+    padding-top: 175px;
+}
+
+/**/
+
+.grid .m_itemListMoney span.m_origPrice,
+.one .m_itemListMoney .m_origPrice,
+ul.list .m_itemListMoney .m_origPrice
+{
+    font-size: 0;
+    color: #6c6c6c;
+}
+
+.m_origPrice > .m_itemPrice,
+ul.list .m_itemListMoney
+{
+    font-size: 12px;
+    color: #6c6c6c;
+    text-shadow: none;
+}
+
+
+.m_salePrice
+{
+    color: #7cdeb7;
+}
+
+li.m_itemListDiv a:link,
+li.m_itemListDiv a:visited,
+li.m_itemListDiv a:active
+{
+    color: #6c6c6c;
+}
+
+/**/
+
+.navi
+{
+    margin: 20px 24px;
+}
+
+    .navi > span
+    {
+        margin-right: 10px;
+    }
+
+    .navi > .flag
+    {
+        font-family: cursive;
+        font-size: 20px;
+    }
+
+/**/
+
+.goTop
+{
+    width: 42px;
+    height: 37px;
+    background-image: url(http://photo.danna.com.tw/2015mobile/001-08.png);
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    z-index: 99999;
+    cursor: pointer;
+    display: none;
 }

@@ -266,6 +266,11 @@ body {
     position: relative;
 }
 
+.header>.search>.outbox>.menu.fixed {
+    position: fixed;
+    top: 0;
+}
+
 .header>.search>.outbox>.menu>div>a>img {
     vertical-align: bottom;
 }
