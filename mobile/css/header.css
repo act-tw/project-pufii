@@ -22,6 +22,10 @@
         height: 106px;
     }
 
+    .header > .logo.danna {
+        background-image: url(http://photo.danna.com.tw/2015mobile/DANNA-LOGO.png);
+    }
+
         .header > .logo > a
         {
             width: 100%;
@@ -312,6 +316,7 @@
     background-image: url(http://photo.danna.com.tw/2015mobile/001-fb.png);
     float: left;
     margin-right: 50px;
+    font-size: 0;
 }
 
 .ig
@@ -321,6 +326,7 @@
     background-image: url(http://photo.danna.com.tw/2015mobile/001-IG.png);
     float: left;
     margin-right: 50px;
+    font-size: 0;
 }
 
 .email
@@ -329,13 +335,6 @@
     height: 59px;
     background-image: url(http://photo.danna.com.tw/2015mobile/001-MAIL.png);
     float: left;
-}
-
-.share > div > a
-{
-    width: 100%;
-    height: 100%;
-    display: block;
     font-size: 0;
 }
 
@@ -435,6 +434,10 @@ li.m_itemListDiv a:active
     {
         font-family: cursive;
         font-size: 20px;
+    }
+
+    .navi > span > a {
+        color: black;
     }
 
 /**/
