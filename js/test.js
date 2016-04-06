@@ -1,1 +1,5 @@
-console.log("test");
+$(function() {
+	$(window).load(function() {
+		console.log("windows loaded");
+	});
+});
