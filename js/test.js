@@ -7,6 +7,6 @@ $(function() {
 				$(this).attr("src", src);	
 			}
 		});
-		console.log("changed");
+		console.log("changed!!!");
 	});
 });
