@@ -1,5 +1,7 @@
 $(function() {
 	$(window).load(function() {
-		console.log("windows loaded");
+		$("img[src]").each(function(){
+			console.log($(this).attr("src"));
+		});
 	});
 });
