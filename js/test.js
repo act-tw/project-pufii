@@ -1,3 +1,4 @@
+/*
 $(function() {
 	$(window).load(function() {
 		$("img[src]").each(function() {
@@ -10,3 +11,4 @@ $(function() {
 		console.log("changed!!!");
 	});
 });
+*/
